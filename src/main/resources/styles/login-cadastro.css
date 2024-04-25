@@ -1,0 +1,120 @@
+
+
+.paneLogin {
+    -fx-background-image: url('background-login.png');
+}
+
+.paneCadastro {
+    -fx-background-image: url('background-cadastro.png');
+}
+
+.text-field {
+    -fx-background-color: rgb(148, 148, 222, 0.25);
+    -fx-font-size: 18px;
+    -fx-font-family: Cambria;
+    -fx-prompt-text-fill: #808080;
+}
+
+.text-field:focused {
+    -fx-background-color: none;
+
+}
+
+.password-field:focused {
+    -fx-background-color: none;
+
+}
+
+.label {
+    -fx-font-family: "Ysabeau Infant", sans-serif;
+}
+
+.botaoCadastro {
+    -fx-background-color: none;
+    -fx-text-fill: #9EA1E3;
+}
+
+.botaoEntrar {
+    -fx-background-color: rgb(148, 148, 222, 0.75);
+    -fx-background-radius: 24;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+}
+
+.botaoEntrar:hover {
+    -fx-text-fill: #6A71FFFF;
+}
+
+.botaoCadastro:hover {
+    -fx-text-fill: #6A71FFFF;
+}
+
+* {
+    -fx-primary-color: #BDBFF6;
+    -fx-secondary-color: #9EA1E3;
+    -fx-light-grey-color: #d1d1d1;
+
+    -fx-focus-color: -fx-secondary-color;
+}
+.date-picker {
+    -fx-background-color: none;
+}
+.date-picker:focused {
+    -fx-background-color: none;
+}
+.date-picker .arrow-button {
+    -fx-background-color: none;
+    -fx-background-radius: 0;
+}
+.date-picker .arrow-button:hover {
+    -fx-background-color: -fx-secondary-color;
+}
+.date-picker .arrow-button .arrow {
+    -fx-background-color: #000000;
+}
+.date-picker .cell {
+    -fx-background-color: white;
+}
+.date-picker .cell:hover {
+    -fx-background-color: -fx-light-grey-color;
+}
+.date-picker .cell:focused {
+    -fx-background-color: -fx-light-grey-color;
+}
+.date-picker .selected {
+    -fx-background-color: -fx-primary-color;
+    -fx-text-fill: white;
+}
+.date-picker .selected:focused {
+    -fx-background-color: -fx-primary-color;
+    -fx-text-fill: white;
+}
+.date-picker-popup  {
+    -fx-border-color: transparent;
+}
+.date-picker-popup .month-year-pane {
+    -fx-background-color: -fx-primary-color;
+}
+.date-picker-popup .month-year-pane .label {
+    -fx-text-fill: white;
+}
+.date-picker-popup .week-number-cell {
+    -fx-text-fill: -fx-secondary-color;
+}
+.date-picker-popup .spinner .button .left-arrow,
+.date-picker-popup .spinner .button .right-arrow {
+    -fx-background-color: white;
+}
+
+.textoSenha {
+    -fx-text-fill: red;
+    -fx-font-family: "Madimi One", sans-serif;
+    -fx-font-size: 15px;
+}
+.text-field-login {
+    -fx-background-color: none;
+    -fx-font-family: Cambria;
+    -fx-font-size: 14px;
+    -fx-text-fill: #000000;
+}

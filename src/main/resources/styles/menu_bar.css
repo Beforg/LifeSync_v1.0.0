@@ -1,0 +1,53 @@
+
+
+.barraMenu {
+    -fx-background-color: rgb(148, 148, 222, 0.5);
+    -fx-font-family: "Madimi One", sans-serif;;
+    -fx-font-style: normal;
+    -fx-font-weight: 400;
+    -fx-font-size: 12px;
+    -fx-text-fill: #ffffff;
+
+}
+
+.labelInfosMenu {
+    -fx-font-family: "Cambria";
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+}
+
+.menu-bar .menu-button:hover, .menu-bar .menu-button:focused, .menu-bar .menu-button:showing {
+    -fx-background: #6A71FFFF;
+    -fx-background-radius: 10;
+    -fx-opacity: 0.5;
+    -fx-text-fill: white;
+}
+
+.menu-bar .label {
+    -fx-font-size: 14.0 pt;
+    -fx-font-family: "Madimi One", sans-serif;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.menu-item {
+    -fx-text-fill: #ffffff;
+    -fx-background: #6A71FFFF;
+    -fx-background-radius: 10;
+}
+
+.menu-item .label{
+    -fx-text-fill: #ffffff;
+}
+.menu-item .label:hover{
+
+    -fx-text-fill: white;
+}
+
+.context-menu {
+    -fx-background-color: #BDBFF6;
+    -fx-background-radius: 10;
+    -fx-opacity: 0.8;
+    -fx-border-radius: 10;
+    -fx-border-color: #9EA1E3 ;
+}

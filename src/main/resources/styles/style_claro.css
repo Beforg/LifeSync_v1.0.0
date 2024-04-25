@@ -1,0 +1,701 @@
+* {
+    -fx-cor-fonte: #ffffff;
+    -fx-cor-da-fonte-lista: #5d5050;
+    -fx-cor-fonte-indicadora: #5d5050;
+    -fx-cor-fundo-indicadora: rgb(148, 148, 222, 0.25);
+    -fx-cor-hover: rgba(118, 100, 238, 0.75);
+    -fx-cor-selecionado: rgba(113, 92, 155, 0.75);
+    -fx-cor-borda-lista: rgba(148, 148, 222, 0.8);
+    -fx-cor-botao: #655175;
+    -fx-fundo-choicebox: #BDBFF6;
+    -fx-cor-fundo-botao: rgb(148, 148, 222, 0.5);
+    -fx-fundo-textfield: #BDBFF6;
+    -fx-cor-fundo-excluir: #ab0202;
+    -fx-cor-prompt: rgba(78, 74, 84, 0.85);
+    -fx-fundo-textarea: rgba(189, 191, 246, 0.75);
+    -fx-fundo-tabela: rgba(189, 191, 246, 0.75);
+    -fx-cor-saldo: #0a8f4c;
+    -fx-cor-saldo-fundo: rgba(20, 169, 95, 0.25);
+    -fx-cor-gasto: #b20b0b;
+    -fx-cor-gasto-fundo: rgba(171, 24, 24, 0.25);
+    -fx-cor-renda: #bdb107;
+    -fx-cor-renda-fundo: rgba(206, 188, 27, 0.25);
+    -fx-checkbox-naoconcluido: #b40000;
+    -fx-checkbox-concluido: #075d00;
+}
+
+
+
+.PaneMenuNavegacao {
+    -fx-background-color: #BDBFF6;
+    -fx-border-color: #9EA1E3;
+    -fx-border-width: 5;
+    -fx-border-radius: 50;
+    -fx-background-radius: 50;
+
+}
+
+AnchorPane {
+    -fx-background-color: rgba(255, 255, 255, 0.91);
+    -fx-background-image: url('background-home.png');
+}
+
+.backgroundPrimeiraTela {
+    -fx-background-color: rgba(255, 255, 255, 0.91);
+    -fx-background-image: url('background-welcome.png');
+}
+
+.estiloPanePequeno {
+    -fx-background-color: rgb(148, 148, 222, 0.5);
+    -fx-background-radius: 30;
+}
+
+.estiloPane2 {
+    -fx-background-color: rgb(148, 148, 222, 0.5);
+    -fx-background-radius: 100;
+}
+
+.estiloPane2SemBorda {
+    -fx-background-color: rgb(148, 148, 222, 0.5);
+}
+
+.tabelaPadrao {
+    -fx-font-size: 12px;
+    -fx-font-family: Cambria;
+    -fx-text-fill: #333333;
+    -fx-background-color: rgb(148, 148, 222, 0.5);
+    -fx-background-radius: 30;
+
+}
+
+.tabelaPadrao .column-header-background,
+.tabelaPadrao .column-header-background .filler,
+.tabelaPadrao .corner {
+    -fx-background-color: transparent;
+
+}
+.tabelaPadrao .column-header {
+    -fx-background-color: none;
+    -fx-text-fill: -fx-cor-fonte;
+
+}
+.tabelaPadrao .column-header .label{
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-text-fill: -fx-cor-fonte-indicadora;
+    -fx-font-family: Cambria;
+    -fx-font-size: 18px;
+}
+.tabelaPadrao .table-cell:hover {
+    -fx-background-color: -fx-cor-hover;
+    -fx-text-fill: -fx-cor-fonte;
+
+}
+.tabelaPadrao .table-row-cell:filled {
+    -fx-background-color: transparent;
+}
+.tabelaPadrao .table-row-cell:empty {
+    -fx-background-color: transparent;
+}
+.tabelaPadrao .table-row-cell:filled:hover {
+    -fx-background-color: -fx-cor-hover;
+}
+.tabelaPadrao .table-row-cell:filled:selected:hover {
+    -fx-background-color: #9EA1E3;
+}
+.tabelaPadrao .table-row-cell:filled:selected {
+    -fx-background-color: -fx-cor-selecionado;
+    -fx-background-insets: 0.0;
+    -fx-background-radius: 0.0;
+    -fx-text-fill: -fx-cor-fonte;
+}
+.tabelaPadrao .table-row-cell:filled:selected .table-cell {
+    -fx-text-fill: -fx-cor-fonte-indicadora;
+}
+.tabelaPadrao .table-view .cell:filled{
+    -fx-cell-size: 30;
+    -fx-alignment: center-left;
+}
+.tabelaPadrao .table-cell {
+    -fx-text-fill: -fx-cor-da-fonte-lista;
+    -fx-font-family: "Cambria";
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+.check-box-table-cell > .check-box:selected .box .mark {
+    -fx-background-color: -fx-fundo-tabela;
+}
+.check-box-table-cell > .check-box:selected .box{
+    -fx-background-color: black;
+}
+.tabelaPadrao .placeholder .label {
+    -fx-text-fill: -fx-cor-fonte-indicadora;
+    -fx-padding:20px;
+    -fx-font-size: 17px;
+    -fx-font-family: Cambria;
+}
+
+.tabelaPadrao .scroll-bar:vertical {
+    -fx-background-color: #BDBFF6;
+    -fx-pref-width: 15px;
+}
+
+.tabelaPadrao .scroll-bar:vertical .thumb {
+    -fx-background-color: -fx-fundo-tabela;
+    -fx-background-radius: 8px;
+}
+
+.tabelaPadrao .scroll-bar:horizontal {
+    -fx-background-color: none;
+    -fx-pref-height: 15px;
+}
+
+.tabelaPadrao .scroll-bar:horizontal .thumb {
+    -fx-background-color: -fx-fundo-tabela;
+    -fx-background-radius: 8px;
+}
+
+.text-field {
+    -fx-border-color: #9C9ED5FF;
+    -fx-border-radius: 5;
+    -fx-border-width: 1;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+    -fx-font-family: "Cambria";
+    -fx-font-size: 14px;
+    -fx-prompt-text-fill: rgba(56, 56, 56, 0.82);
+    -fx-background-color: rgb(148, 148, 222, 0.5);
+    -fx-background-radius: 5;
+}
+.textFieldPadrao {
+    -fx-border-color: -fx-cor-fundo-indicadora;
+    -fx-border-radius: 1;
+    -fx-border-width: 1;
+    -fx-font-weight: bold;
+    -fx-text-fill: -fx-cor-fonte;
+    -fx-font-family: "Cambria";
+    -fx-font-size: 14px;
+    -fx-prompt-text-fill: -fx-cor-prompt;
+    -fx-background-color: -fx-fundo-textfield;
+    -fx-background-radius: 1;
+
+}
+
+.date-picker {
+    -fx-background-color: rgb(148, 148, 222, 0.5);
+    -fx-background-radius: 10;
+    -fx-prompt-text-fill: black;
+}
+
+.date-picker .arrow-button {
+    -fx-background-color: none;
+    -fx-background-radius: 0;
+}
+.date-picker .arrow-button:hover {
+    -fx-background-color: #6A71FFFF;
+    -fx-background-radius: 10;
+}
+.date-picker .arrow-button .arrow {
+    -fx-background-color: #000000;
+}
+.date-picker .cell {
+    -fx-background-color: #9EA1E3;
+}
+.date-picker .cell:hover {
+    -fx-background-color: #BDBFF6;
+}
+.date-picker .cell:focused {
+    -fx-background-color: -fx-light-grey-color;
+}
+.date-picker .selected {
+    -fx-background-color: #6A71FFFF;
+    -fx-text-fill: white;
+}
+.date-picker .selected:focused {
+    -fx-background-color: #BDBFF6;
+    -fx-text-fill: white;
+}
+.date-picker-popup .month-year-pane {
+    -fx-background-color: #BDBFF6;
+}
+.date-picker-popup .month-year-pane .label {
+    -fx-text-fill: #000000;
+}
+.date-picker-popup .week-number-cell {
+    -fx-text-fill: #ffffff;
+}
+.date-picker-popup .spinner .button .left-arrow,
+.date-picker-popup .spinner .button .right-arrow {
+    -fx-background-color: #000000;
+}
+.choice-box{
+    -fx-background-color: rgb(148, 148, 222, 0.25);
+    -fx-background-radius: 10;
+    -fx-border-color: #9c9ed5;
+    -fx-border-radius: 10;
+    -fx-border-width: 1;
+    -fx-text-fill: -fx-cor-fonte;
+    -fx-font-weight: bold;
+    -fx-font-family: "Cambria";
+    -fx-font-size: 14px;
+}
+.choice-box:filled{
+    -fx-background-color: #BDBFF6;
+}
+.choice-box .context-menu{
+    -fx-background-color: -fx-fundo-choicebox;
+    -fx-bacckground-radius: 18;
+    -fx-border-width: 3;
+    -fx-text-fill: -fx-cor-fonte;
+    -fx-font-family: "Cambria";
+    -fx-font-size: 12px;
+}
+.choice-box .context-menu:hover{
+    -fx-background-color: #9EA1E3;
+}
+.choice-box .context-menu .menu-item{
+    -fx-background-color: -fx-fundo-choicebox;
+    -fx-text-fill: -fx-cor-fonte;
+    -fx-font-family: "Cambria";
+    -fx-font-size: 12px;
+}
+.choice-box .context-menu .menu-item:hover{
+    -fx-background-color: -fx-cor-hover;
+}
+
+.text-area {
+    -fx-background-color: -fx-fundo-textarea;
+    -fx-text-fill: -fx-cor-da-fonte-lista;
+    -fx-font-family: "Cambria";
+    -fx-font-size: 14px;
+}
+.text-area .content{
+    -fx-background-color: -fx-fundo-textarea;
+    -fx-text-fill: -fx-cor-da-fonte-lista;
+    -fx-font-family: "Cambria";
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+.botoesCronometro {
+    -fx-background-color: none;
+}
+
+.botaoMural {
+    -fx-background-color: -fx-cor-fundo-botao;
+    -fx-background-radius: 5;
+    -fx-text-fill: -fx-cor-botao;
+    -fx-font-family: "Cambria";
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+.botaoMural:hover {
+    -fx-background-color: -fx-cor-hover;
+}
+
+.botaoMural:pressed {
+    -fx-background-color: -fx-cor-selecionado;
+}
+
+.botaoMuralExcluir {
+    -fx-background-color: -fx-cor-fundo-botao;
+    -fx-background-radius: 5;
+    -fx-text-fill: -fx-cor-fundo-excluir;
+    -fx-font-family: "Cambria";
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.botaoMuralExcluir:pressed {
+    -fx-background-color: rgba(106, 113, 255, 0.4);
+}
+
+.labelIndicadora {
+    -fx-background-color: -fx-cor-fundo-indicadora;
+    -fx-background-radius: 2;
+    -fx-text-fill: -fx-cor-fonte-indicadora;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Cambria";
+}
+.labelIndicadoraTipo {
+    -fx-background-color: rgba(239, 174, 0, 0.25);
+    -fx-background-radius: 2;
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Cambria";
+}
+
+.labelTexto {
+    -fx-background-color: none;
+    -fx-text-fill: -fx-cor-fonte-indicadora;
+    -fx-font-family: "Cambria";
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+.labelIndicaMes{
+    -fx-background-color: -fx-cor-fundo-indicadora;
+    -fx-background-radius: 2;
+    -fx-text-fill: -fx-cor-botao;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-font-family: "Cambria";
+}
+.labelIndicadoraInfos {
+    -fx-background-color: rgba(154, 102, 243, 0.25);
+    -fx-background-radius: 2;
+    -fx-text-fill: -fx-cor-fonte;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-font-family: "Cambria";
+
+}
+.labelNumeroTotal {
+    -fx-background-color: -fx-cor-fundo-indicadora;
+    -fx-background-radius: 2;
+    -fx-text-fill: -fx-cor-fonte-indicadora;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Cambria";
+}
+
+.botaoNavegacao {
+    -fx-background-color: rgb(148, 148, 222, 0.5);
+    -fx-background-radius: none;
+    -fx-text-fill: -fx-cor-botao;
+    -fx-font-family: "Cambria";
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+.botaoNavegacao:hover {
+    -fx-background-color: -fx-cor-hover;
+    -fx-background-radius: none;
+}
+
+.progress-bar {
+    -fx-background-color: #BDBFF6;
+}
+
+.progress-bar .bar {
+    -fx-background-color: #9497de;
+}
+
+.progress-bar .label {
+    -fx-text-fill: #333333;
+    -fx-font-family: "Cambria";
+    -fx-font-size: 14px;
+}
+.lista {
+    -fx-background-color: transparent;
+    -fx-font-size: 12px;
+    -fx-text-alignment: center;
+    -fx-border-width: 1;
+    -fx-border-radius: 3;
+    -fx-border-color: -fx-cor-borda-lista;
+}
+
+.lista .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: -fx-cor-da-fonte-lista;
+    -fx-font-family: "Cambria";
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-alignment: center;
+}
+.lista .list-cell:selected {
+    -fx-background-color: -fx-cor-selecionado;
+    -fx-text-fill: -fx-cor-fonte;
+}
+
+.lista .list-cell:hover {
+    -fx-background-color: -fx-cor-hover;
+    -fx-background-radius: 3;
+    -fx-text-fill: -fx-cor-fonte;
+}
+.lista .scroll-bar:vertical {
+    -fx-background-color: #BDBFF6;
+    -fx-pref-width: 15px;
+}
+
+.lista .scroll-bar:vertical .thumb {
+    -fx-background-color: #9EA1E3;
+    -fx-background-radius: 8px;
+}
+
+.radio-button {
+    -fx-font-family: "Cambria";
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -fx-cor-fonte-indicadora;
+    -fx-background-color: -fx-cor-fundo-indicadora;
+}
+
+.radio-button .dot {
+    -fx-radius: 3;
+}
+
+.radio-button:selected .dot {
+    -fx-background-color: -fx-cor-selecionado;
+}
+
+.checkBoxConcluido {
+    -fx-text-fill: -fx-checkbox-naoconcluido;
+    -fx-font-family: Cambria;
+}
+.checkBoxConcluido .box {
+    -fx-border-color: #888be3;
+    -fx-background-color: none;
+    -fx-border-radius: 5;
+}
+
+.checkBoxConcluido:selected {
+    -fx-text-fill: -fx-checkbox-concluido;
+}
+.checkBoxTema {
+    -fx-text-fill: black;
+    -fx-font-family: Cambria;
+    -fx-background-color: -fx-cor-fundo-indicadora;
+}
+.checkBoxTema .box {
+    -fx-border-color: #888be3;
+    -fx-background-color: none;
+    -fx-border-radius: 5;
+}
+
+.checkBoxTema:selected {
+    -fx-text-fill: black;
+-fx-background-color: -fx-cor-selecionado;
+}
+.tabelaItem {
+    -fx-font-size: 14px;
+    -fx-font-family: "Madimi One", sans-serif;
+    -fx-text-fill: #333333;
+    -fx-background-color: rgb(148, 148, 222, 0.5);
+    -fx-background-radius: 10;
+
+}
+
+.tabelaItem .column-header-background,
+.tabelaItem .column-header-background .filler,
+.tabelaItem .corner {
+    -fx-background-color: transparent;
+
+}
+.tabelaItem .column-header {
+    -fx-background-color: none;
+    -fx-text-fill: -fx-cor-fonte;
+
+}
+.tabelaItem .column-header .label{
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-text-fill: -fx-cor-fonte-indicadora;
+    -fx-font-family: Cambria;
+    -fx-font-size: 18px;
+}
+.tabelaItem .table-cell:hover {
+    -fx-background-color: -fx-cor-hover;
+
+}
+.tabelaItem .table-row-cell:filled {
+    -fx-background-color: transparent;
+}
+.tabelaItem .table-row-cell:empty {
+    -fx-background-color: transparent;
+}
+.tabelaItem .table-row-cell:filled:hover {
+    -fx-background-color: -fx-cor-hover;
+}
+.tabelaItem .table-row-cell:filled:selected {
+    -fx-background-color: -fx-cor-selecionado;
+    -fx-background-insets: 0.0;
+    -fx-background-radius: 0.0;
+    -fx-text-fill: -fx-cor-fonte;
+}
+.tabelaItem .table-view .cell:filled{
+    -fx-cell-size: 30;
+    -fx-alignment: center;
+}
+.tabelaItem .table-cell {
+    -fx-text-fill: -fx-cor-da-fonte-lista;
+    -fx-font-family: "Cambria";
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+.tabelaItem .placeholder .label {
+    -fx-text-fill: -fx-cor-fonte-indicadora;
+    -fx-padding:20px;
+    -fx-font-size: 17px;
+    -fx-font-family: Cambria;
+}
+
+.tabelaItem .scroll-bar:vertical {
+    -fx-background-color: #BDBFF6;
+    -fx-pref-width: 15px;
+}
+
+.tabelaItem .scroll-bar:vertical .thumb {
+    -fx-background-color: -fx-fundo-tabela;
+    -fx-background-radius: 8px;
+}
+
+.tabelaItem .scroll-bar:horizontal {
+    -fx-background-color: none;
+    -fx-pref-height: 15px;
+}
+
+.tabelaItem .scroll-bar:horizontal .thumb {
+    -fx-background-color: -fx-fundo-tabela;
+    -fx-background-radius: 8px;
+}
+.labelSaldo {
+    -fx-font-family: Cambria;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -fx-cor-saldo;
+    -fx-background-color: -fx-cor-saldo-fundo;
+}
+.labelGasto {
+    -fx-font-family: Cambria;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -fx-cor-gasto;
+    -fx-background-color: -fx-cor-gasto-fundo;
+}
+.labelRenda {
+    -fx-font-family: Cambria;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -fx-cor-renda;
+    -fx-background-color: -fx-cor-renda-fundo;
+}
+.labelAtrasadas {
+    -fx-background-color: rgba(171, 24, 24, 0.25);
+}
+.labelConcluidas {
+    -fx-background-color: rgba(20, 169, 95, 0.25);
+}
+.labelHoje {
+    -fx-background-color: rgba(104, 12, 171, 0.25);
+}
+
+.scroll-pane {
+
+}
+.scroll-pane.context-menu {
+    -fx-background-color: #BDBFF6;
+    -fx-border-color: #9EA1E3;
+    -fx-border-width: 5;
+    -fx-border-radius: 50;
+    -fx-background-radius: 50;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: rgba(148, 148, 222, 0.5);
+}
+.scroll-bar:vertical {
+    -fx-background-color: #BDBFF6;
+    -fx-pref-width: 15px;
+}
+
+.scroll-bar:vertical .track {
+    -fx-background-color: #9EA1E3;
+    -fx-fill: #9EA1E3;
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #655175;
+    -fx-background-radius: 8px;
+}
+.tabelaFinancas {
+    -fx-font-size: 14px;
+    -fx-font-family: "Madimi One", sans-serif;
+    -fx-text-fill: #5b5b5b;
+    -fx-background-color: -fx-fundo-tabela;
+    -fx-background-radius: 10;
+
+}
+
+.tabelaFinancas .column-header-background,
+.tabelaFinancas .column-header-background .filler,
+.tabelaFinancas .corner {
+    -fx-background-color: #4b4773;
+    -fx-background-radius: 10;
+
+}
+.tabelaFinancas .column-header {
+    -fx-background-color: #4b4773;
+    -fx-background-radius: 10;
+
+}
+.tabelaFinancas .column-header .label{
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-text-fill: white;
+    -fx-font-family: Cambria;
+    -fx-font-size: 18px;
+}
+.tabelaFinancas .table-cell:hover {
+
+}
+.tabelaFinancas .table-row-cell:filled {
+    -fx-background-color: none;
+}
+.tabelaFinancas .table-row-cell:empty {
+    -fx-background-color: none;
+}
+.tabelaFinancas .table-row-cell:filled:hover {
+    -fx-background-color: -fx-cor-hover;
+}
+.tabelaFinancas .table-row-cell:filled:selected {
+    -fx-background-color: -fx-cor-selecionado;
+    -fx-background-insets: 0.0;
+    -fx-background-radius: 0.0;
+    -fx-text-fill: yellow;
+}
+.tabelaFinancas.table-view .cell:filled{
+    -fx-cell-size: 30;
+    -fx-alignment: center;
+}
+.tabelaFinancas .table-cell {
+    -fx-text-fill: -fx-cor-da-fonte-lista;
+    -fx-font-family: "Cambria";
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+.tabelaFinancas .placeholder .label {
+    -fx-text-fill: -fx-cor-fonte-indicadora;
+    -fx-padding:20px;
+    -fx-font-size: 17px;
+    -fx-font-family: Cambria;
+}
+
+.tabelaFinancas .scroll-bar:vertical {
+    -fx-background-color: #BDBFF6;
+    -fx-pref-width: 15px;
+}
+
+.tabelaFinancas .scroll-bar:vertical .thumb {
+    -fx-background-color: -fx-fundo-tabela;
+    -fx-background-radius: 8px;
+}
+
+.tabelaFinancas .scroll-bar:horizontal {
+    -fx-background-color: none;
+    -fx-pref-height: 15px;
+}
+
+.tabelaFinancas .scroll-bar:horizontal .thumb {
+    -fx-background-color: -fx-fundo-tabela;
+    -fx-background-radius: 8px;
+}
+
+.labelSemanaDoAno {
+    -fx-background-color: -fx-cor-fundo-indicadora;
+    -fx-background-radius: 2;
+    -fx-text-fill: -fx-cor-fonte-indicadora;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Cambria";
+}

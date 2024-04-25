@@ -1,0 +1,13 @@
+.estiloPanePequeno {
+    -fx-background-color: rgb(148, 148, 222, 0.5);
+    -fx-background-radius: 50;
+}
+
+.estiloPane2 {
+    -fx-background-color: rgb(148, 148, 222, 0.5);
+    -fx-background-radius: 100;
+}
+
+.estiloPane2SemBorda {
+    -fx-background-color: rgb(148, 148, 222, 0.5);
+}

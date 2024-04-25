@@ -1,0 +1,27 @@
+
+.pane {
+    -fx-background-color: #BDBFF6;
+}
+
+.label {
+    -fx-font-family: Cambria;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.dialog-pane {
+    -fx-font-family: Cambria;
+    -fx-font-size: 12px;
+}
+
+.button {
+    -fx-background-color: rgb(148, 148, 222, 0.5);
+    -fx-background-radius: 10;
+    -fx-font-family: Cambria;
+    -fx-font-size: 12px;
+    -fx-pref-width: 120px;
+}
+
+.button:hover {
+    -fx-background-color: rgb(106, 113, 255);
+}
